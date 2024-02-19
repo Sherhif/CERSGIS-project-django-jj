@@ -3,5 +3,8 @@ from django.http import HttpResponse
 
 # Create your views here.
 
+# def index(request):
+#     return HttpResponse("Hello, CONTACT US.")
+
 def index(request):
-    return HttpResponse("Hello, CONTACT US.")
+    return render(request, "contactus/contact-us.html")
