@@ -36,7 +36,9 @@ urlpatterns = [
    path("legislations/", include("legislations.urls")),
    path("dashboard/", include(extra_patterns)),
    path("community-engagement/", include("communityengagement.urls")),
-   path("contact-us/", views.index, name="index"),
+   path("contact-us/", views.index, name="contactus.urls"),
+   path("blog/", include("blog.urls")),
+   path("about-us/", include ("aboutus.urls")),
    path('admin/', admin.site.urls),
 ]
 

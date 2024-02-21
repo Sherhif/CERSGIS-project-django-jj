@@ -1,0 +1,402 @@
+.days {
+    padding-top: 40px;
+    text-indent: 10px;
+    padding-right: 10px;
+    margin-left: 60%;
+}
+
+.container-fluid {
+    margin-left: 35%;
+}
+
+.blow-link {
+    background-color: white;
+    color: #0088CC;
+    font: 13px "OPens Sans", Arial, sans-serif;
+    font-weight: 700;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+
+    a {
+        text-decoration: none;
+        color: #0088CC;
+    }
+}
+
+.blow-link:hover {
+    background-color: #0088CC;
+    color: white;
+
+    a {
+        color: white;
+    }
+}
+
+.dropdown-menu {
+    background-color: whitesmoke;
+
+    a {
+        color: black;
+    }
+}
+
+.dropdown-menu:hover {
+    background-color: whitesmoke;
+
+    a {
+        color: black;
+    }
+}
+
+nav li {
+    list-style: none;
+}
+
+aside {
+    padding: 40px 0 40px 0;
+    background-color: black;
+}
+
+.btnn {
+    padding: 10px;
+    margin-left: 10%;
+    color: white;
+    background-color: #0088CC;
+    cursor: pointer;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
+}
+
+.btnn:hover {
+    background-color: #0077CC;
+}
+
+.text-with-picture {
+    background-color: #0088CC;
+    border-top: 7px solid #0077CC;
+    padding-bottom: 70px;
+    justify-content: center;
+    img {
+        float: right;
+        width: 600px;
+        padding: 5px 15px 5px 5px;
+        margin-right: 10%;
+    }
+
+    h2 {
+        color: white;
+        font: "Open Sans", Arial, sans-serif;
+        padding: 20px 0 40px 20px;
+        margin-left: 10%;
+    }
+}
+
+.text-on-picture {
+    position: absolute;
+    left: 68%;
+    margin-top: 290px;
+    color: white;
+    line-height: 4px;
+    font: 25px;
+}
+
+.text-by-picture {
+    font: 18px "Open Sans", Arial, sans-serif;
+    padding: 0px 10px 10px 20px;
+    color: white;
+    width: 40%;
+    margin-left: 10%;
+}
+
+hr.solid {
+    border-top: 2px solid;
+    color: #DBDBDB;
+}
+
+.whowe {
+    color: #FFFFFF;
+    background-color: black;
+    font: 13px "Open Sans", Arial, sans-serif;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin: 20px;
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
+}
+
+.whowe-main {
+    margin-left: 10%;
+}
+
+.whowe:hover {
+    background-color: #2E353E;
+}
+
+div.gallery {
+    img {
+        width: 400px;
+    }
+
+    padding: 20px;
+}
+
+article {
+    display: flex;
+    justify-content: center;
+}
+
+mark .news {
+    padding-left: 10%;
+}
+
+
+.inscribe {
+    top: 0px;
+    max-width: 50px;
+}
+
+.inscribe-header {
+    background: #0088CC;
+    color: white;
+    padding: 0px 10px 2px;
+    font: 12.6px "Open Sans", Arial, sans-serif;
+    margin-top: -3px;
+}
+
+.inscribe-container {
+    background-color: #F4F4F4;
+    color: #0088CC;
+    padding: 5px;
+}
+
+.inscribe-gallery {
+    display: flex;
+    padding-top: 10px;
+
+    a {
+        text-decoration: none;
+        color: #0088CC;
+    }
+}
+
+.inscribe-gallery a:hover {
+    text-decoration: underline;
+}
+
+.last-text {
+    line-height: 10px;
+    color: gray;
+    padding: 8px;
+}
+
+.read-more {
+    color: #FFFFFF;
+    font: 12px "Opens Sans", Arial, sans-serif;
+    background-color: #0088CC;
+    cursor: pointer;
+    float: right;
+    padding: 5px 9px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.read-more:hover {
+    background-color: #0077CC;
+}
+
+.first-part {
+    display: flex;
+    background-color: #0E0E0E;
+    color: white;
+    position: relative;
+
+    div {
+        padding: 40px 90px;
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
+}
+
+.first-part a:hover {
+    text-decoration: underline;
+}
+
+.get-in-touch {
+    color: #fff;
+    font: 1.2em "Open Sans", Arial, sans-serif;
+    background-color: #0088CC;
+    position: absolute;
+    display: inline-block;
+    padding: 10px;
+    top: 0;
+    left: 50;
+    margin-top: -17px;
+}
+
+footer::before {
+    content: "";
+    border-right: 10px solid #005580;
+    border-top: 16px solid transparent;
+    display: block;
+    position: absolute;
+    width: 7px;
+    height: 0;
+    margin-left: 80px;
+    margin-top: -16px;
+}
+
+.second-part {
+    background-color: #060606;
+    padding: 50px;
+}
+
+.copy-right {
+    float: left;
+    padding: 10px 190px 10px 15px;
+    color: gray;
+}
+
+.logo {
+    margin-left: 500px;
+}
+
+footer {
+    margin-top: 0px;
+}
+
+
+
+@media screen and (max-width:1400px) {
+    .days {
+        padding-top: 20px;
+        margin-left: 50%;
+    }
+
+    .container-fluid {
+        margin-left: 13%;
+        margin-top: 0;
+    }
+
+    .navbar {
+        img {
+            margin-top: -50px;
+        }
+    }
+
+    .text-on-picture {
+        left: 58%;
+    }
+
+    div .gallery {
+         width: 30%;
+         margin: 0;
+         padding: 0;
+    }
+
+    .first-part {
+        div {
+            padding: 40px 30px 0 10px;
+        }
+    }
+
+    footer::before {
+        margin-left: 0;
+    }
+
+    .copy-right {
+        padding: 10px 30px 10px 15px;
+    }
+}
+
+
+@media screen and (max-width:430px) {
+    .days {
+        display: none
+    }
+
+    .carousel-item {
+        img {
+            width: 100%;
+            height: 300px;
+        }
+    }
+
+    section {
+        img {
+            width: 100px;
+        }
+    }
+
+    .text-with-picture {
+        img {
+            width: 100%;
+            margin: 0px;
+        }
+    }
+
+    .text-on-picture {
+        top: 680px;
+        left: 5%;
+    }
+
+    .text-by-picture {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    article {
+        display: inline;
+        justify-content: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    div .gallery {
+        padding: 0;
+        img {
+            width: 100%;
+            vertical-align: none;
+        }
+    }
+
+    .first-part {
+        display: block;
+        padding: 0;
+        margin: 0;
+    }
+
+    .second-part {
+        float: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .copy-right {
+        padding: 0;
+        margin: 0;
+    }
+}

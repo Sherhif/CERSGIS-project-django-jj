@@ -1,16 +1,24 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CERSGIS :: News and Events</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CERSGIS :: Home</title>
+    <title>new blog</title>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" type="text/css" href="{% static 'home/assets/css/homepage.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'blog/assets/css/blog.css'%}">
 </head>
 
 <body>
@@ -19,7 +27,6 @@
             <span class=" bi bi-calendar-date-fill" style="color:#999999; font-size:13px;"> Monday - Friday</span>
 
             <span class="bi bi-clock" style="font-size: 13px;color:#999999;"> 8am to 5pm</span>
-
 
             <span class="bi bi-envelope" style="font-size:13px;color:#999999;"> cersgis@ug.edu.gh</span>
 
@@ -32,7 +39,7 @@
 
     <section>
         <nav class="navbar navbar-expand-lg">
-            <img src="{% static 'home/assets/images/logo.png' %}" style="width: 500px; padding-left: 20%; padding-top: 0px;">
+            <img src="{% static 'blog/assets/images/logo.png' %}" style="width: 500px; padding-left: 20%; padding-top: 0px;">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -43,12 +50,12 @@
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
                     <li class="nav-item">
                         <button class="blow-link">
-                            <a class="nav-link active" aria-current="page" href="/">Home</a>
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </button>
                     </li>
                     <li class="nav-item">
                         <button class="blow-link">
-                            <a class="nav-link active" aria-current="page" href="about-us/">About Us</a>
+                            <a class="nav-link active" aria-current="page" href="about-us.html">About Us</a>
                         </button>
                     </li>
                     <li class="nav-item dropdown">
@@ -103,153 +110,139 @@
                         <a class="nav-link active" aria-current="page" href="#">Gallery</a>
                     </button>
                     <button class="blow-link">
-                        <a class="nav-link active" aria-current="page" href="blog/">Blog</a>
+                        <a class="nav-link active" aria-current="page" href="blog.html">Blog</a>
                     </button>
                     <button class="blow-link">
-                        <a class="nav-link active" aria-current="page" href="contact-us/">Contact Us</a>
+                        <a class="nav-link active" aria-current="page" href="contact-us.html">Contact Us</a>
                     </button>
                 </div>
             </div>
         </nav>
     </section>
 
-    <section>
-        <!-- carousel -->
-        <div id="demo" class="carousel slide" data-bs-ride="carousel">
-
-            <!-- dots -->
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
-                <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
-
-            </div>
-
-            <!-- The slideshow -->
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="{% static 'home/assets/images/custom-header-bg-3.jpg' %}" alt="Los Angeles" class="d-block" style="width:100%" ,
-                        height="600px">
-                </div>
-                <div class="carousel-item">
-                    <img src="{% static 'home/assets/images/custom-header-bg.jpg' %}" alt="Chicago" class="d-block" style="width:100%" ,
-                        height="600px">
-                </div>
-
-            </div>
-
-            <!-- Left and right controls -->
-            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon"></span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
-                <span class="carousel-control-next-icon"></span>
-            </button>
-        </div>
-    </section>
-
     <aside>
-        <button type="menu" class="btnn"><a href=contact-us.html>Request Technical Support</a></button>
+        <div class="header">
+            <ul class="home-link">
+                <li> <a href=homepage.html>HOME</a> </li>
+                <li> > </li>
+                <li style="color: #999999;">BLOG</li>
+            </ul>
+            <h3 class="title">BLOG</h3>
+        </div>
     </aside>
 
-    <main>
-        <div class="text-with-picture">
-            <img src="{% static 'home/assets/images/ab1_61TAe2m.jpg' %}">
-            <div class="text-on-picture">
-                <p>Providing geographic information and</p>
-                <p>remote sensing services for sustainable</p>
-                <p>development</p>
-            </div>
-            <h2>Who we are</h2>
-            <p class="text-by-picture">The centre for Remote Sensing and Geographic Information Services started as
-                a
-                Remote
-                Sensing
-                Application Laboratory in 1990 at the Department of Geography and Resources Development,
-                University of Ghana, Legon. The remote Sensing Application Unit developed its staff capacity to
-                provide contractual Remote sensing and GIS services to its clients. In 2000, the status of the
-                Remote
-                Sensing Application Unit changed to Centre for Remote Sensing and Geographic Information
-                Services (CERSGIS). The change of name meant change of strategic focus from a funded
-                establishment to a self-sustaining Non-profit Organization that focused on providing geographic
-                information and remote sensing services for sustainable development planning and management
-                of resources...
-            </p>
-            <hr class="solid">
-            <div class="whowe-main">
-                <button type="button" class="whowe"><a href=contact-us.html>REQUEST SUPPORT</a></button>
-                <button type="button" class="whowe"><a href=about-us.html>Get to know Us</a></button>
-            </div>
-        </div>
-    </main>
-
-    <mark>
-        <div class="news">
-            <h2>News</h2>
-            <hr class="solid">
-        </div>
-    </mark>
+    <div class="cersgis-border"></div>
 
     <article>
-        <div class="gallery">
-            <img src="{% static 'home/assets/images/WhatsApp_Image_2021-06-14_at_1.11.11_PM.jpeg' %}">
-            <div class="inscribe-gallery">
-                <div class="inscribe">
-                    <div class="inscribe-header">Jun</div>
-                    <div class="inscribe-container">2021</div>
-                </div>
-                <div class="gallery-link">
-                    <a href="https://cersgis.org/news/?blog_id=10">Enroachment On The Sakumo Ramsar Site</a>
-                </div>
+        <div class="image-text">
+            <div>
+                <img src="{% static 'blog/assets/images/WhatsApp_Image_2021-06-14_at_1.11.11_PM.jpeg' %}"><br><br>
             </div>
-            <div class="last-text">
-                <p>The Sakumo Ramsar Site also known as the Sakumono</p>
-                <p>Lagoon is a wetland of international importance. It is</p>
-                <p>the only</p>
-                <hr class="solid">
-                <button type="button" class="read-more">Read more...</button>
+            <div>
+                <h2>Enroachment On The Sakumo Ramsar Site</h2>
+                <p>The Sakumo Ramsar Site also known as the Sakumo Lagoon is a<br> wetland of intrnational
+                    importance. It is only...
+                </p>
             </div>
         </div>
-
-        <div class="gallery">
-            <img src="{% static 'home/assets/images/Chinese-busted-for-mining-at-River-Pra-by-military-task-force.jpeg' %}">
-            <div class="inscribe-gallery">
-                <div class="inscribe">
-                    <div class="inscribe-header">Jun</div>
-                    <div class="inscribe-container">2021</div>
-                </div>
-                <div class="gallery-link">
-                    <a href="https://cersgis.org/news/?blog_id=10">A military officer laments about effects of
-                        galamsey</a>
-                </div>
-            </div>
-            <div class="last-text">
-                <p>Only a few years ago, the issue was with the illegal</p>
-                <p>logging of tress in our forests for timber</p>
-                <hr class="solid">
-                <button type="button" class="read-more">Read more...</button>
-            </div>
+        <div class="icons-button">
+            <i class="bi bi-calendar3"></i> June 3, 2021 <i class="bi bi-person-fill"></i> By Admin
+            <button type="button" class="read-more">Read more...</button><br><br>
+            <hr class="solid">
         </div>
 
-        <div class="gallery">
-            <img src="{% static 'home/assets/images/Screenshot_2021-05-04_at_10.03.14-min.png' %}">
-            <div class="inscribe-gallery">
-                <div class="inscribe">
-                    <div class="inscribe-header">May</div>
-                    <div class="inscribe-container">2021</div>
-                </div>
-                <div class="gallery-link">
-                    <a href="https://cersgis.org/news/?blog_id=10">MORNITORING ARTISANAL MINING (GALAMSEY)<br>
-                        IN GHANA</a>
-                </div>
+        <div class="image-text">
+            <div>
+                <img src="{% static 'blog/assets/images/Chinese-busted-for-mining-at-River-Pra-by-military-task-force.jpeg' %}"><br><br>
             </div>
-            <div class="last-text">
-                <p>The Artisanal mining sector of Ghana was seen to</p>
-                <p>steadily grow in size and significance</p>
-                <hr class="solid">
-                <button type="button" class="read-more">Read more...</button><br><br>
+            <div>
+                <h2>A military officer laments about effects of<br> galamsey</h2>
+                <p>Only a few years ago, the issue was with the illegal logging of trees
+                    for timber
+                </p>
             </div>
+        </div>
+        <div class="icons-button">
+            <i class="bi bi-calendar3"></i> June 1, 2021 <i class="bi bi-person-fill"></i> By Admin
+            <button type="button" class="read-more">Read more...</button><br><br>
+            <hr class="solid">
+        </div>
+
+        <div class="image-text">
+            <div>
+                <img src="{% static 'blog/assets/images/Screenshot_2021-05-04_at_10.03.14-min.png' %}"><br><br>
+            </div>
+            <div>
+                <h2>MONITORING ARTISINAL MINING (GALAMSEY)<br> IN GHANA</h2>
+                <p>The Artisinal mining sector of Ghana was seen to steadily grow in size
+                    and significance
+                </p>
+            </div>
+        </div>
+        <div class="icons-button">
+            <i class="bi bi-calendar3"></i> May 4, 2021 <i class="bi bi-person-fill"></i> By Admin
+            <button type="button" class="read-more">Read more...</button><br><br>
+            <hr class="solid">
+        </div>
+
+        <div class="image-text">
+            <div>
+                <img src="{% static 'blog/assets/images/WhatsApp Image 2024-01-29 at 11.47.58 AM (2).jpeg' %}"><br><br>
+            </div>
+            <div>
+                <h2>CHARCOAL PRODUCTION</h2>
+                <p>Charcoal production and its dangers in Ghana
+                </p>
+            </div>
+        </div>
+        <div class="icons-button">
+            <i class="bi bi-calendar3"></i> April 28, 2021 <i class="bi bi-person-fill"></i> By Admin
+            <button type="button" class="read-more">Read more...</button><br><br>
+            <hr class="solid">
+        </div>
+
+        <div class="image-text">
+            <div>
+                <img src="{% static 'blog/assets/images/WhatsApp Image 2024-01-29 at 11.47.58 AM (1).jpeg' %}"><br><br>
+            </div>
+            <div>
+                <h2>SANITATION IN GHANA</h2>
+                <p>Sanitation (Latrine) problems in the state of repair in Ghana
+                </p>
+            </div>
+        </div>
+        <div class="icons-button">
+            <i class="bi bi-calendar3"></i> April 28, 2021 <i class="bi bi-person-fill"></i> By Admin
+            <button type="button" class="read-more">Read more...</button><br><br>
+            <hr class="solid">
+        </div>
+
+        <div class="image-text">
+            <div>
+                <img src="{% static 'blog/assets/images/WhatsApp Image 2024-01-29 at 11.47.58 AM.jpeg' %}"><br><br>
+            </div>
+            <div>
+                <h2>ILLEGAL MINING (GALAMSEY) MONITORING IN<br> GHANA</h2>
+                <p>Illegal mining activities and its dangers to the landscape of Ghana.
+                </p>
+            </div>
+        </div>
+        <div class="icons-button">
+            <i class="bi bi-calendar3"></i> April 28, 2021 <i class="bi bi-person-fill"></i> By Admin
+            <button type="button" class="read-more">Read more...</button><br><br>
+            <hr class="solid">
         </div>
     </article>
+
+    <summary>
+        <div class="pagination">
+            <a href="#">&raquo;</a>
+            <a class="active" href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">&laquo;</a><br><br>
+        </div>
+    </summary>
 
     <footer>
         <div class="first-part">
@@ -285,13 +278,13 @@
                 <p><a href="https://www.epa.gov.gh/epa/" target="_blank">Environmental Protection Agency</a></p>
                 <p><a href="https://cersgis.org/projects" target="_blank">Products Catalog</a></p>
                 <p><a href="https://www.cersgis.org/training" target="_blank">CERSGIS Training</a></p>
-                <p><a href=contact-us/>Contact Us</a></p>
+                <p><a href=contact-us.html>Contact Us</a></p>
             </div>
         </div>
 
         <div class="second-part">
             <div class="copy-right">
-                <img src="{% static 'home/assets/images/logo.png' %}" style="width: 80px;">
+                <img src="{% static 'blog/assets/images/logo.png' %}" style="width: 80px;">
             </div>
             <div class="copy-right">
                 <p>© Copyright 2019. All Rights Reserved.</p>
@@ -307,4 +300,6 @@
     </footer>
 </body>
 
+</html>
+</body>
 </html>
