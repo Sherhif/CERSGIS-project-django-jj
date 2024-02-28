@@ -1,9 +1,14 @@
 {% extends "home/base.html" %}
 {% load static %}
 
-{% block css %}
-<link href="{% static 'contactus/assets/css/contact-us'}" rel="stylesheet" type="text/css">
+{% block title %}CERSGIS :: Remote Sensing{% endblock %}
+
+{% block extrahead %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'contactus/assets/css/contact-us.css' %}">
+
 {% endblock %}
+
 
 {% block body %}
     <aside>
