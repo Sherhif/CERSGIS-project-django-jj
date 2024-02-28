@@ -1,0 +1,331 @@
+.days {
+    padding-top: 40px;
+    text-indent: 10px;
+    padding-right: 10px;
+    margin-left: 60%;
+}
+
+.container-fluid {
+    margin-left: 35%;
+}
+
+.blow-link {
+    background-color: white;
+    color: #0088CC;
+    font: 13px "OPens Sans", Arial, sans-serif;
+    font-weight: 700;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+
+    a {
+        text-decoration: none;
+        color: #0088CC;
+    }
+}
+
+.blow-link:hover {
+    background-color: #0088CC;
+    color: white;
+
+    a {
+        color: white;
+    }
+}
+
+.dropdown-menu {
+    background-color: whitesmoke;
+
+    a {
+        color: black;
+    }
+}
+
+.dropdown-menu:hover {
+    background-color: whitesmoke;
+
+    a {
+        color: black;
+    }
+}
+
+nav li {
+    list-style: none;
+}
+
+.header {
+    border-top: 5px solid #384045;
+    border-bottom: 5px solid gray;
+
+    background-color: #0e0e0e;
+    padding: 20px;
+    color: white;
+    margin-top: 20px;
+
+}
+
+
+.home-link {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    list-style: none;
+
+    a {
+        text-decoration: none;
+        color: #0088CC;
+    }
+}
+
+.home-link a:hover {
+    text-decoration: underline;
+}
+
+.title {
+
+    font-size: 20px;
+    margin-left: 40px;
+
+}
+
+aside {
+    width: 100%;
+    margin: 0px 0 30px 0;
+}
+
+.cersgis-border {
+    width: 180px;
+    border-top: 5px solid #0088CC;
+    position: absolute;
+    top: 276px;
+    left: 50px;
+}
+
+.read-more-button {
+    padding: 5px 20% 100px 20%;
+
+    p,
+    div {
+        color: #777777;
+    }
+}
+
+article {
+    background-color: #EDEDED;
+    padding: 50px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.first {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+}
+
+.grid-view {
+    margin: 0 15px 0 18%;
+}
+
+.grid-view::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.content {
+    padding: 16px;
+    text-align: center;
+    border: 10px solid #777777;
+    height: 290px;
+    background-color: white;
+
+    p {
+        color: #777777;
+    }
+
+    h3 {
+        font: 19px #1d2127;
+    }
+}
+
+.our-team {
+    text-align: center;
+    margin: 70px;
+
+    p {
+        color: #777777;
+    }
+}
+
+.our-style {
+    font: 30px "Open Sans", Arial, sans-serif;
+    color: black;
+    padding: 20px;
+}
+
+.first-part {
+    display: flex;
+    background-color: #0E0E0E;
+    color: white;
+    position: relative;
+
+    div {
+        padding: 40px 90px;
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
+}
+
+.first-part a:hover {
+    text-decoration: underline;
+}
+
+.get-in-touch {
+    color: #fff;
+    font: 1.2em "Open Sans", Arial, sans-serif;
+    background-color: #0088CC;
+    position: absolute;
+    display: inline-block;
+    padding: 10px;
+    top: 0;
+    left: 50;
+    margin-top: -17px;
+}
+
+footer::before {
+    content: "";
+    border-right: 10px solid #005580;
+    border-top: 16px solid transparent;
+    display: block;
+    position: absolute;
+    width: 7px;
+    height: 0;
+    margin-left: 80px;
+    margin-top: -16px;
+}
+
+.second-part {
+    background-color: #060606;
+    padding: 50px;
+}
+
+.copy-right {
+    float: left;
+    padding: 10px 190px 10px 15px;
+    color: gray;
+}
+
+.logo {
+    margin-left: 500px;
+}
+
+footer {
+    margin-top: 0px;
+}
+
+
+
+
+
+@media screen and (max-width:1400px) {
+    .days {
+        padding-top: 20px;
+        margin-left: 50%;
+    }
+
+    .container-fluid {
+        margin-left: 13%;
+        margin-top: 0;
+    }
+
+    .navbar {
+        img {
+            margin-top: -50px;
+        }
+    }
+
+    .cersgis-border {
+        top: 255px;
+    }
+
+    .first {
+        width: 33%;
+    }
+
+    .grid-view {
+        margin: 0 15% 0 15%;
+    }
+
+    .content {
+        height: 350px;
+    }
+
+    .first-part {
+        div {
+            padding: 40px 30px 0 10px;
+        }
+    }
+
+    footer::before {
+        margin-left: 0;
+    }
+
+    .copy-right {
+        padding: 10px 30px 10px 15px;
+    }
+}
+
+
+
+@media screen and (max-width:430px) {
+    body {
+        width: 100%;
+    }
+
+    .read-more-button {
+        margin: 0;
+        padding: 0;
+    }
+
+    .cersgis-border {
+        display: none;
+    }
+
+    .first {
+        float: none;
+        width: 100%;
+        padding: 5px;
+    }
+
+    article {
+        padding: 0px;
+    }
+
+    .first-part {
+        display: block;
+        padding: 0;
+        margin: 0;
+    }
+
+    .second-part {
+        float: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .copy-right {
+        padding: 0;
+        margin: 0;
+    }
+}

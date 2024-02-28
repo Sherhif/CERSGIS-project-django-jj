@@ -51,6 +51,8 @@ INSTALLED_APPS = [
     'teams',
     'policy',
     'sectors',
+    'blog',
+    'aboutus',
 ]
 
 MIDDLEWARE = [

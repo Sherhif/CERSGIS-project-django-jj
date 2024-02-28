@@ -1,0 +1,69 @@
+{% extends "home/base.html" %}
+{% load static %}
+
+{% block title %}CERSGIS :: Remote Sensing{% endblock %}
+
+{% block extrahead %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'contactus/assets/css/contact-us.css' %}">
+
+{% endblock %}
+
+
+{% block body %}
+    <aside>
+        <div class="header">
+            <ul class="home-link">
+                <li> <a href=homepage.html>HOME</a> </li>
+                <li> > </li>
+                <li style="color: #999999;">BLOG</li>
+            </ul>
+            <h3 class="title">BLOG</h3>
+        </div>
+    </aside>
+
+    <div class="cersgis-border"></div>
+
+    <article>
+        <h2 class="contact"><b>Contact</b> <i>Us</i></h2>
+        <div class="text-area-office">
+            <div>
+                <label for="name">Your Name*</label><br><br>
+                <input type="text" required style="width: 300px; padding: 15px;">
+            </div>
+            <div>
+                <label for="gmail">Your email address*</label><br><br>
+                <input type="email" required style="width: 300px; padding: 15px;"><br>
+            </div>
+
+
+            <div class="office">
+                <h3 style="color: #0088CC;">The <b>Office</b></h3>
+                <span class="bi bi-geo-alt-fill" style="color: #0088CC;"></span> PMB L17, Annie Jiagge St, University of
+                Ghana-Legon-Accra<br>
+                <p><span class="bi bi-telephone-fill" style="color: #0088CC;"></span> +233-0303974211</p>
+                <p><i class="bi bi-envelope-fill" style="color: #0088CC;"></i> <a
+                        href="mailto:cersgis@ug.edu.gh">cersgis@ug.edu.gh</a></p>
+                <hr class="solid">
+            </div>
+        </div>
+
+        <div class="text-area-office">
+            <div>
+                <label for="messages">Messages*</label><br><br>
+                <textarea name="message" rows="10" style="width: 675px;"></textarea>
+                <hr class="solid">
+            </div>
+
+            <div>
+                <h3 style="color: #0088CC;">Business <b>Hours</b></h3>
+                <p><span class="bi bi-clock-fill" style="color: #0088CC;"></span> Monday - Friday - 8am - 5pm</p>
+                <p><span class="bi bi-clock-fill" style="color: #0088CC;"></span> Saturday - Sunday - closed</p>
+
+            </div>
+        </div>
+
+        <button type="menu" class="btnn">Send Message</button>
+
+    </article>
+    {% endblock %}

@@ -1,0 +1,136 @@
+{% extends "home/base.html" %}
+{% load static %}
+
+{% block title %}CERSGIS :: News and Events{% endblock %}
+
+{% block extrahead %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'blog/assets/css/blog.css' %}">
+
+{% endblock %}
+
+{% block body %}
+    <aside>
+        <div class="header">
+            <ul class="home-link">
+                <li> <a href=homepage.html>HOME</a> </li>
+                <li> > </li>
+                <li style="color: #999999;">BLOG</li>
+            </ul>
+            <h3 class="title">BLOG</h3>
+        </div>
+    </aside>
+
+    <div class="cersgis-border"></div>
+
+    <article>
+        <div class="image-text">
+            <div>
+                <img src="{% static 'blog/assets/images/WhatsApp_Image_2021-06-14_at_1.11.11_PM.jpeg' %}"><br><br>
+            </div>
+            <div>
+                <h2>Enroachment On The Sakumo Ramsar Site</h2>
+                <p>The Sakumo Ramsar Site also known as the Sakumo Lagoon is a<br> wetland of intrnational
+                    importance. It is only...
+                </p>
+            </div>
+        </div>
+        <div class="icons-button">
+            <i class="bi bi-calendar3"></i> June 3, 2021 <i class="bi bi-person-fill"></i> By Admin
+            <button type="button" class="read-more">Read more...</button><br><br>
+            <hr class="solid">
+        </div>
+
+        <div class="image-text">
+            <div>
+                <img src="{% static 'blog/assets/images/Chinese-busted-for-mining-at-River-Pra-by-military-task-force.jpeg' %}"><br><br>
+            </div>
+            <div>
+                <h2>A military officer laments about effects of<br> galamsey</h2>
+                <p>Only a few years ago, the issue was with the illegal logging of trees
+                    for timber
+                </p>
+            </div>
+        </div>
+        <div class="icons-button">
+            <i class="bi bi-calendar3"></i> June 1, 2021 <i class="bi bi-person-fill"></i> By Admin
+            <button type="button" class="read-more">Read more...</button><br><br>
+            <hr class="solid">
+        </div>
+
+        <div class="image-text">
+            <div>
+                <img src="{% static 'blog/assets/images/Screenshot_2021-05-04_at_10.03.14-min.png' %}"><br><br>
+            </div>
+            <div>
+                <h2>MONITORING ARTISINAL MINING (GALAMSEY)<br> IN GHANA</h2>
+                <p>The Artisinal mining sector of Ghana was seen to steadily grow in size
+                    and significance
+                </p>
+            </div>
+        </div>
+        <div class="icons-button">
+            <i class="bi bi-calendar3"></i> May 4, 2021 <i class="bi bi-person-fill"></i> By Admin
+            <button type="button" class="read-more">Read more...</button><br><br>
+            <hr class="solid">
+        </div>
+
+        <div class="image-text">
+            <div>
+                <img src="{% static 'blog/assets/images/WhatsApp Image 2024-01-29 at 11.47.58 AM (2).jpeg' %}"><br><br>
+            </div>
+            <div>
+                <h2>CHARCOAL PRODUCTION</h2>
+                <p>Charcoal production and its dangers in Ghana
+                </p>
+            </div>
+        </div>
+        <div class="icons-button">
+            <i class="bi bi-calendar3"></i> April 28, 2021 <i class="bi bi-person-fill"></i> By Admin
+            <button type="button" class="read-more">Read more...</button><br><br>
+            <hr class="solid">
+        </div>
+
+        <div class="image-text">
+            <div>
+                <img src="{% static 'blog/assets/images/WhatsApp Image 2024-01-29 at 11.47.58 AM (1).jpeg' %}"><br><br>
+            </div>
+            <div>
+                <h2>SANITATION IN GHANA</h2>
+                <p>Sanitation (Latrine) problems in the state of repair in Ghana
+                </p>
+            </div>
+        </div>
+        <div class="icons-button">
+            <i class="bi bi-calendar3"></i> April 28, 2021 <i class="bi bi-person-fill"></i> By Admin
+            <button type="button" class="read-more">Read more...</button><br><br>
+            <hr class="solid">
+        </div>
+
+        <div class="image-text">
+            <div>
+                <img src="{% static 'blog/assets/images/WhatsApp Image 2024-01-29 at 11.47.58 AM.jpeg' %}"><br><br>
+            </div>
+            <div>
+                <h2>ILLEGAL MINING (GALAMSEY) MONITORING IN<br> GHANA</h2>
+                <p>Illegal mining activities and its dangers to the landscape of Ghana.
+                </p>
+            </div>
+        </div>
+        <div class="icons-button">
+            <i class="bi bi-calendar3"></i> April 28, 2021 <i class="bi bi-person-fill"></i> By Admin
+            <button type="button" class="read-more">Read more...</button><br><br>
+            <hr class="solid">
+        </div>
+    </article>
+
+    <summary>
+        <div class="pagination">
+            <a href="#">&raquo;</a>
+            <a class="active" href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">&laquo;</a><br><br>
+        </div>
+    </summary>
+    {% endblock %}
