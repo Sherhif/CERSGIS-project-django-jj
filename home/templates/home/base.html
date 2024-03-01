@@ -48,7 +48,7 @@
                 </li>
                 <li class="nav-item">
                     <button class="blow-link">
-                        <a class="nav-link active" aria-current="page" href="about-us/">About Us</a>
+                        <a class="nav-link active" aria-current="page" href="{% url 'aboutUs:about_us' %}">About Us</a>
                     </button>
                 </li>
                 <li class="nav-item dropdown">
@@ -103,10 +103,10 @@
                     <a class="nav-link active" aria-current="page" href="#">Gallery</a>
                 </button>
                 <button class="blow-link">
-                    <a class="nav-link active" aria-current="page" href="blog/">Blog</a>
+                    <a class="nav-link active" aria-current="page" href="{% url 'blog:index' %}">Blog</a>
                 </button>
                 <button class="blow-link">
-                    <a class="nav-link active" aria-current="page" href="contact-us/">Contact Us</a>
+                    <a class="nav-link active" aria-current="page" href="/contact-us">Contact Us</a>
                 </button>
             </div>
         </div>
