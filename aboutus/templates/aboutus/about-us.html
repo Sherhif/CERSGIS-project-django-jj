@@ -1,7 +1,7 @@
 {% extends "home/base.html" %}
 {% load static %}
 
-{% block title %}CERSGIS :: About{% endblock %}
+{% block title %}CERSGIS :: aboutus{% endblock %}
 
 {% block extrahead %}
 
@@ -13,7 +13,7 @@
     <aside>
         <div class="header">
             <ul class="home-link">
-                <li> <a href=homepage.html>HOME</a> </li>
+                <li> <a href="/">HOME</a> </li>
                 <li> > </li>
                 <li style="color: #999999;">BLOG</li>
             </ul>
@@ -25,17 +25,21 @@
 
     <div class="read-more-button">
         <div class="cersgis-border"></div>
-        <h2>We Implement Geospatial Solutions for Sustainable Development</h2><br>
-        <p>The Center for Remote Sensing and Geographic Information Services (CERSGIS) was established in 1999
+        <!-- <h2>We Implement Geospatial Solutions for Sustainable Development</h2><br> -->
+        <h2>{{aboutus.title}}</h2><br>
+        <p>
+            {{aboutus.description}}
+        </p>
+        <!-- <p>The Center for Remote Sensing and Geographic Information Services (CERSGIS) was established in 1999
             by the University of Ghana and Environmental Protection Agency of Ghana (EPA). As a self-supporting
             Organization, CERSGIS was mandated to provide GIS and Remote Sensing services using Geospatial
             technologies to provide decision support and planning tools for sustainable social and economic
             development to Government, NGOs, Research Institutions and the Private Sector. The Centre is located
             at the Department of Geography and resource Department, University of Ghana, Legon
-        </p>
+        </p> -->
 
         <div id="demo" class="collapse">
-            In addition, the Centre provides inter alia, services in the development of Spatial Data Infrastructure
+            <!-- In addition, the Centre provides inter alia, services in the development of Spatial Data Infrastructure
             Satellite Image processing, Spatial Database development and Web-based applications for spatial land
             use/land cover mapping and planning, desertification, flood hazard mapping, spatial modeling,
             vulnerability assessment and capacity enhancement programs in Geographic Information System development.<br><br>
@@ -49,7 +53,9 @@
             CERSGIS is a partner currently involved in the implementation of the sub-regional program, SERVIR
             West Africa, that promotes the use of Remote Sensing technology to help stakeholders and decision makers
             address pertinent issues on agriculture and food insecurity, land cover/land use and ecosystems, weather
-            and climate,water resources and
+            and climate,water resources and -->
+
+            {{aboutus.description2}}
         </div>
 
         <button type="button" class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#demo">
@@ -63,10 +69,12 @@
                 <div class="content">
                     <span class="bi bi-stack" style="color: #0088CC;"></span>
                     <h3>Our Mission</h3>
-                    <p>Our mission is to support development planning with geo-information technologies,
+                    <p>{{aboutus.our_mission}}
+                    </p>
+                    <!-- <p>Our mission is to support development planning with geo-information technologies,
                         generate geo-information products for decision making, build capacity,
                         and making spatial data widely available.
-                    </p>
+                    </p> -->
                 </div>
             </div>
 
@@ -74,7 +82,8 @@
                 <div class="content">
                     <span class="bi bi-stack" style="color: #0088CC;"></span>
                     <h3>Our Vision</h3>
-                    <p>Our vision is to provide geospatial solutions for sustainable development</p>
+                    <p>{{aboutus.our_vision}}</p>
+                    <!-- <p>Our vision is to provide geospatial solutions for sustainable development</p> -->
                 </div>
             </div>
 
@@ -82,10 +91,12 @@
                 <div class="content">
                     <span class="bi bi-stack" style="color: #0088CC;"></span>
                     <h3>Why Us</h3>
-                    <p>We are here to offer GIS and Remote Sensing services to provide decision support
+                    <p>{{aboutus.why_us}}
+                    </p>
+                    <!-- <p>We are here to offer GIS and Remote Sensing services to provide decision support
                         and planning tools for sustainable social and economic development to Governments,
                         NGOs, Research Institutions and the Private sectors
-                    </p>
+                    </p> -->
                 </div>
             </div>
         </div>
@@ -95,6 +106,7 @@
         <div class="our-style">Meet <b>Our Team</b></div>
         <p>Surf through the collective CERSGIS team and the various assigned portfolios.</p>
     </div>
+
     {% endblock %}
 
     
