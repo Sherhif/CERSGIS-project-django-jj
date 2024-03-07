@@ -5,6 +5,7 @@ from django.db import models
 class AboutUs(models.Model):
     title = models.CharField(max_length=100)
     description = models.TextField()
+    description2 = models.TextField(null=True)
     our_mission = models.TextField()
     our_vision = models.TextField()
     why_us = models.TextField()
