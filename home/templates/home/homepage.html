@@ -128,20 +128,29 @@
     </div>
 
     <div class="gallery">
+        <!-- <img src="{{home.cover}}"> -->
         <img src="{% static 'home/assets/images/Screenshot_2021-05-04_at_10.03.14-min.png' %}">
         <div class="inscribe-gallery">
             <div class="inscribe">
-                <div class="inscribe-header">May</div>
-                <div class="inscribe-container">2021</div>
+                <div class="inscribe-header">{{home.post_month}}</div>
+                <div class="inscribe-container">{{home.post_year}}</div>
+                <!-- <div class="inscribe-header">May</div>
+                <div class="inscribe-container">2021</div> -->
             </div>
             <div class="gallery-link">
+                <a href="https://cersgis.org/news/?blog_id=10">{{home.title}}
+                    </a>
+            </div>
+            <!-- <div class="gallery-link">
                 <a href="https://cersgis.org/news/?blog_id=10">MORNITORING ARTISANAL MINING (GALAMSEY)<br>
                     IN GHANA</a>
-            </div>
+            </div> -->
         </div>
         <div class="last-text">
-            <p>The Artisanal mining sector of Ghana was seen to</p>
-            <p>steadily grow in size and significance</p>
+            <p>{{home.description}}</p>
+            <P>{{home.description_2}}</P>
+            <!-- <p>The Artisanal mining sector of Ghana was seen to</p>
+            <p>steadily grow in size and significance</p> -->
             <hr class="solid">
             <button type="button" class="read-more">Read more...</button><br><br>
         </div>
