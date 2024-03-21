@@ -12,9 +12,9 @@ def index(request):
     return render(request, "blog/blog.html")
 
 def index(request):
-    blog = BlogPage.objects.get()
+    blog = BlogPage.objects.all()
     template = loader.get_template('blog/blog.html')
     context = {
-        'blog' : blog,
+        'blogs' : blog,
         }
     return HttpResponse(template.render(context, request))

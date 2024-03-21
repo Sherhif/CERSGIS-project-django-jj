@@ -11,29 +11,31 @@
 
 
 {% block body %}
-    <aside>
-        <div class="header">
-            <ul class="home-link">
-                <li> <a href="/">HOME</a> </li>
-                <li> > </li>
-                <li style="color: #999999;">BLOG</li>
-            </ul>
-            <h3 class="title">BLOG</h3>
-        </div>
-    </aside>
+<aside>
+    <div class="header">
+        <ul class="home-link">
+            <li> <a href="/">HOME</a> </li>
+            <li> > </li>
+            <li style="color: #999999;">CONTACT US</li>
+        </ul>
+        <h3 class="title">Contact Us</h3>
+    </div>
+</aside>
 
-    <div class="cersgis-border"></div>
+<div class="cersgis-border"></div>
 
-    <article>
+<article>
+    <form action="/process_contact-us/" method="POST">
+        {% csrf_token %}
         <h2 class="contact"><b>Contact</b> <i>Us</i></h2>
         <div class="text-area-office">
             <div>
                 <label for="name">Your Name*</label><br><br>
-                <input type="text" required style="width: 300px; padding: 15px;">
+                <input type="text" name="name" required style="width: 300px; padding: 15px;">
             </div>
             <div>
                 <label for="gmail">Your email address*</label><br><br>
-                <input type="email" required style="width: 300px; padding: 15px;"><br>
+                <input type="email" name="email" required style="width: 300px; padding: 15px;"><br>
             </div>
 
 
@@ -50,8 +52,8 @@
 
         <div class="text-area-office">
             <div>
-                <label for="messages">Messages*</label><br><br>
-                <textarea name="message" rows="10" style="width: 675px;"></textarea>
+                <label for="messages">Message*</label><br><br>
+                <textarea name="message" required rows="10" style="width: 675px;"></textarea>
                 <hr class="solid">
             </div>
 
@@ -63,7 +65,8 @@
             </div>
         </div>
 
-        <button type="menu" class="btnn">Send Message</button>
+        <button type="submit" class="btnn">Send Message</button>
 
-    </article>
-    {% endblock %}
+    </form>
+</article>
+{% endblock %}
