@@ -42,6 +42,7 @@ urlpatterns = [
    path("blog/", include("blog.urls")),
    path("about-us/", include ("aboutus.urls")),
    path('admin/', admin.site.urls),
+   path("process_contact-us/", views.process_ContactUs, name="process_contact-us/")
 ]
 
 
